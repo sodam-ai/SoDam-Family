@@ -1,0 +1,16 @@
+# SoDam Family
+node_modules/
+
+# 런타임 산출물·로컬 캐시
+*.log
+.omc/
+
+# 내부 기획·진행 문서 (공개 배포 제외)
+.PRD/
+CHECKPOINT.md
+tasks/
+
+# 로컬 도구 자동 생성 파일
+.plugin-config/
+.pair-programming-session.md
+*.stackdump

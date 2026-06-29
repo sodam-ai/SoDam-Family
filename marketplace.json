@@ -1,0 +1,73 @@
+{
+  "name": "sodam-family-bundle",
+  "displayName": "SoDam 가족 번들",
+  "description": "SoDam 6형제 Claude Code 플러그인 패밀리 번들 — 안전(Harness)·건강검진(Context)·반복(Loop)·계획(Agentic) 한 번에 설치",
+  "version": "0.1.0",
+  "familyMapRef": "SODAM_FAMILY_MAP.md",
+  "installNote": "Harness 먼저 설치 필수(required=true). 나머지는 선택, 순서 무관.",
+  "plugins": [
+    {
+      "name": "sodam-harness",
+      "displayName": "SoDamHarness",
+      "order": 1,
+      "required": true,
+      "layer": "L0",
+      "reason": "안전 게이트·백업·되돌리기. 모든 형제의 기반 — 필수 선행 설치.",
+      "repo": "https://github.com/sodam-ai/SoDam-Harness-Eng"
+    },
+    {
+      "name": "sodam-loop",
+      "displayName": "SoDamLoop",
+      "order": 2,
+      "required": false,
+      "layer": "L2",
+      "reason": "정기 점검 스케줄·훅 반복 관리. Harness 안전 게이트 위에서 동작.",
+      "repo": "https://github.com/sodam-ai/SoDam-Loop-Eng"
+    },
+    {
+      "name": "sodam-context",
+      "displayName": "SoDamContext",
+      "order": 3,
+      "required": false,
+      "layer": "L1",
+      "reason": "CLAUDE.md·AGENTS.md 건강검진·처방. Harness 없을 때 독립 폴백 내장.",
+      "repo": "https://github.com/sodam-ai/SoDam-Context-Eng"
+    },
+    {
+      "name": "sodam-agentic",
+      "displayName": "SoDamAgentic",
+      "order": 4,
+      "required": false,
+      "layer": "L2",
+      "reason": "계획 먼저·변경점 쉬운말 검토·서브에이전트 오케스트레이션. isHarnessAlive() 위임 패턴 적용.",
+      "repo": "https://github.com/sodam-ai/SoDam-Agentic-Eng"
+    }
+  ],
+  "optional": [
+    {
+      "name": "sodam-prompt",
+      "displayName": "SoDamPrompt",
+      "layer": "L3",
+      "phase": 2,
+      "note": "Phase 1 = Next.js 웹앱(독립). Phase 2에서 SKILL.md export → 플러그인 마켓 등록 예정.",
+      "repo": "https://github.com/sodam-ai/SoDam-Prompt-Eng"
+    },
+    {
+      "name": "sodam-reverse",
+      "displayName": "SoDamReverse",
+      "layer": "L3",
+      "phase": 1,
+      "note": "역공학 분석 Claude Code 플러그인. Harness safety-rules.json 주입 방식(re-inject-harness.mjs).",
+      "repo": "https://github.com/sodam-ai/SoDam-Reverse-Eng"
+    }
+  ],
+  "sharedLib": {
+    "family-detect": "shared/family-detect.mjs",
+    "description": "6형제 생존 감지 공통 라이브러리 (isFamilyAlive, isHarnessAlive)"
+  },
+  "semver": {
+    "major": "모든 형제 호환성 검증 필수, 이 파일 동시 업데이트",
+    "minor": "기능 추가·하위 호환 유지, 개별 배포 가능",
+    "patch": "버그 수정, 독립 배포 가능"
+  }
+}
