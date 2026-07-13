@@ -22,8 +22,8 @@
 | 📄 **SoDamContext** | 건강검진 | CLAUDE.md·AGENTS.md 건강검진·처방 | 주기 스케줄링·오케스트레이션 | 1 | ✅ AI 완료 |
 | 🔁 **SoDamLoop** | 반복 | 정기 작업·훅 반복·스케줄 관리 | 컨텍스트 파일 직접 수정 | 1a | ✅ AI 완료 |
 | 🧭 **SoDamAgentic** | 계획·검토 | 계획 먼저·변경점 쉬운말 검토·서브에이전트 오케스트레이션 | 안전 게이트 우회 | init-mvp | ✅ AI 완료 |
-| ✍️ **SoDamPrompt** | 프롬프트 설계 | 웹앱 기반 프롬프트 작성 도구 (Next.js+Supabase), 6엔진 학습사다리 입구(L1) | Context 문진(intake) 기능 중복 | Phase 1 착수 준비 | PRD 8개 완성 |
-| 🔍 **SoDamReverse** | 역공학 | 외부 코드·앱 역공학 분석 Claude Code 플러그인, Harness safety-rules 주입 방식 | Context 검진(checkup) 기능 중복 | Phase 1 착수 준비 | PRD 9개 완성 |
+| ✍️ **SoDamPrompt** | 프롬프트 설계 | 초보용 한국어 글쓰기 스킬 10종 (무코드 SKILL.md), 6엔진 학습사다리 입구 | Context 문진(intake) 기능 중복 | Phase 1 완료 | ✅ v0.1.0 구현 완료 |
+| 🔍 **SoDamReverse** | 역공학 | 외부 코드·앱 역공학 분석 Claude Code 플러그인, Harness safety-rules 주입 방식 | Context 검진(checkup) 기능 중복 | Phase 1~2 진행 | ✅ v0.1.0 라이브 성공 |
 
 ### "Context"라는 단어 혼동 해소 (★A1 갭 해소)
 
@@ -44,7 +44,7 @@
 | 무엇을 분석 | 내 AI 사용설명서(CLAUDE.md) 건강 | 내가 AI에게 보낼 지시문 설계 | 외부 앱·코드의 구조 |
 | 주요 사용자 | Claude Code 사용자 | 프롬프트 작성자 | 역공학 분석가 |
 | 출력 | 건강검진 JSON + 처방 | 완성된 프롬프트 문서 | 분석 리포트 |
-| 형태 | CLI + Claude Code 플러그인 | Next.js 웹앱 (Phase 1) | Claude Code 플러그인 |
+| 형태 | CLI + Claude Code 플러그인 | Claude Code 플러그인 (SKILL.md 10종) | Claude Code 플러그인 |
 
 ---
 
@@ -102,10 +102,11 @@ node lib/checkup-cli.mjs <파일경로> --action backup
 # 예상 반환: { ok: boolean, jobId: string, nextRun: string }
 ```
 
-### SoDam-Prompt (Phase 1 = 웹앱 REST API, Phase 2 = SKILL.md export)
+### SoDam-Prompt (v0.1.0 = SKILL.md 10종, 슬래시 커맨드 / 웹앱 폐기됨)
 ```
-# Phase 1: Next.js API routes (확정 예정)
-# Phase 2: SKILL.md export → Claude Code 플러그인 마켓 1급화
+# 스킬 자연어 자동매칭 또는 슬래시 커맨드로 호출 (훅·서버·DB 없음, 무코드)
+/book-report-helper "책 제목" "느낀 점"   # 예: 독후감
+# 입력 변수 표준: $1 $2 $ARGUMENTS
 ```
 
 ### SoDam-Reverse (예정)
@@ -189,13 +190,13 @@ Loop `backup.mjs`는 현재 Harness `backup.mjs`의 **독립 복사본**이다. 
 
 | 프로젝트 | 현재 버전 | Phase | AI 작업 상태 | 남은 블로커 |
 |---------|---------|-------|------------|-----------|
-| Harness | 0.1.0 | 1 완료 | ✅ | 사람 smoke test |
-| Context | 0.1.0 | 1 완료 | ✅ | 사람 e2e·베타·법무 |
-| Loop | 0.1.0-phase1a | 1a 완료 | ✅ | Stop훅 라이브 검증, GAP-2 이관 트리거 |
-| Agentic | 0.1.0 | init-mvp | ✅ | F2/F3/F4 라이브 검증 |
-| Prompt | 0.0.0 | PRD 완성 | ✅ PRD 8개 | Phase 1 구현 착수 (Next.js+Supabase 웹앱) |
-| Reverse | 0.0.0 | PRD 완성 | ✅ PRD 9개 | Phase 1 구현 착수 (plugin/hook 5개 보안차단 대기) |
+| Harness | 0.1.0 | 1+2 완료 | ✅ selftest 117 | 사람 smoke test·Mac·법무·.PRD 추적해제 |
+| Context | 0.1.0 | 1 완료 | ✅ 177 test | 예방훅 라이브 미발동·사람 e2e·베타·법무 |
+| Loop | 0.1.0 | 1a 완료·1b 코드완료 | ✅ 80 test | 1b 라이브 검증·GAP-2 이관 트리거 |
+| Agentic | 0.1.0 | init-mvp 완료 | ✅ selftest 42 | F3 검토 발동 미확정·라이브 검증 |
+| Prompt | 0.1.0 | 스킬10종 완료 (웹앱 폐기) | ✅ | 자동매칭 라이브 미검증·자동테스트 0·법무 |
+| Reverse | 0.1.0 | 1 라이브·2 안드로이드 라이브 | ✅ selftest 8 | 2층 과차단·정규화 배포·독립 검수·법무 |
 
 ---
 
-> 최종 수정: 2026-06-29 · 이전 버전: 4형제(2026-06-21) → 6형제(2026-06-29)
+> 최종 수정: 2026-07-13 (§1·§2·§7 Prompt/Reverse 정체성·버전현황 실측 반영) · 이전: 4형제(2026-06-21) → 6형제(2026-06-29). 상세 구현 실측 = [[SODAM_FAMILY_STATUS]]

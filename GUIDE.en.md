@@ -298,7 +298,7 @@ Writing good instructions for an AI is a skill that takes practice. SoDamPrompt 
 
 When you want to use AI for everyday tasks (not coding) and want reliable results without having to learn how to write complex AI instructions.
 
-**Current Status:** 🚧 In development. Phase 1 = Web app (Next.js + Supabase). 8 PRD design documents completed. Phase 2 = Claude Code plugin export.
+**Current Status:** ✅ v0.1.0 complete — 10 Korean writing skills as a no-code Claude Code plugin (SKILL.md). The earlier Next.js + Supabase web-app plan was dropped.
 
 **Available commands (planned for Phase 2):**
 
@@ -1186,11 +1186,11 @@ The quality of what an AI produces depends heavily on what you ask it. Compare:
 
 The second version tells the AI: length, audience, tone, subject, and what to include. SoDamPrompt gives you templates that already have all these elements built in — you just fill in the specific blanks.
 
-**Current status:** 🚧 Phase 1 in development (Next.js web application + Supabase database). 8 PRD design documents completed.
+**Current status:** ✅ v0.1.0 complete — shipped as 10 no-code SKILL.md skills (the Next.js + Supabase web-app plan was dropped).
 
 **When will it be released?**
 
-Phase 1 (web app) is the current priority. The Claude Code plugin version (Phase 2) comes after that.
+The Claude Code plugin (10 SKILL.md skills) is the shipped form. The earlier web-app idea was dropped.
 
 ---
 
@@ -2286,7 +2286,7 @@ A. Yes! Apache-2.0 allows modification. Requirements: state that you modified th
 
 **Q27. SoDamPrompt and SoDamReverse say "Coming Soon" — when exactly?**
 
-A. There is no announced release date. SoDamPrompt Phase 1 (web app) is the current development priority. SoDamReverse Phase 1 is waiting for 5 security features to be implemented first. Follow the GitHub repositories for announcements.
+A. There is no announced release date. SoDamPrompt is code-complete at v0.1.0 (10 SKILL.md skills). SoDamReverse is at v0.1.0 with Phase 1-2 live-tested. Remaining work is human live-testing, beta, and legal review. Follow the GitHub repositories for announcements.
 
 ---
 
@@ -2585,8 +2585,8 @@ A record of exactly when something happened. SoDam uses timestamps in backup fil
 | Plugin | Version | Phase | Status |
 |--------|---------|-------|--------|
 | 📄 SoDamContext | v0.1.0 | Phase 1 | 🔄 AI implementation complete; awaiting human e2e testing + beta |
-| ✍️ SoDamPrompt | v0.0.0 | PRD complete | 🔄 8 PRD documents done; Phase 1 web app development pending |
-| 🔍 SoDamReverse | v0.0.0 | PRD complete | 🔄 9 PRD documents done; Phase 1 pending (waiting for 5 security features) |
+| ✍️ SoDamPrompt | v0.1.0 | Code complete | ✅ 10 SKILL.md skills shipped (web-app plan dropped); live auto-match unverified |
+| 🔍 SoDamReverse | v0.1.0 | Phase 1-2 live | ✅ Phase 1 + Android live-tested; layer-2 over-blocking & legal review remain |
 
 ### Family Bundle
 

@@ -112,7 +112,7 @@ SoDam AI Studio가 개발했으며, Apache-2.0 오픈소스 라이선스로 무�
 **역할**: 처음 AI를 쓰는 분들을 위한 빈칸 채우기 한국어 프롬프트 10개.
 
 **하는 일**:
-- 슬래시 명령어(예: `/독후감-도우미`) 입력 → 빈칸만 채우면 완성
+- 슬래시 명령어(예: `/book-report-helper`) 입력 → 빈칸만 채우면 완성
 - 별도 설치 없이 `~/.claude/skills/` 폴더에 SKILL.md 복사로 동작
 
 **설치 방식**: 플러그인이 아닌 스킬(SKILL.md) 방식
@@ -467,7 +467,7 @@ D:\AI_Dev_Work\2026y\SoDam_Family\shared\
 
 ```
 1. Claude Code 실행
-2. /독후감-도우미 입력
+2. /book-report-helper 입력
 3. 빈칸 채우기 (책 제목, 느낀 점 등)
 4. AI가 완성된 독후감 초안 생성
 ```
@@ -495,7 +495,7 @@ D:\AI_Dev_Work\2026y\SoDam_Family\shared\
 #### `/sodam-harness-undo`
 - **용도**: 마지막으로 Harness가 백업한 작업 되돌리기
 - **주의**: Harness가 백업한 것만 되돌릴 수 있음 (Harness 설치 전 작업은 불가)
-- **백업 위치**: `~/.sodam/backups/`
+- **백업 위치**: `~/.sodamharness/backups/` (현재 형제별 독립 저장, 통합 경로 준비 중)
 
 #### `/sodam-harness-fix`
 - **용도**: 간단한 문제 자동 수정 시도

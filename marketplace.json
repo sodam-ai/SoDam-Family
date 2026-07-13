@@ -49,7 +49,7 @@
       "displayName": "SoDamPrompt",
       "layer": "L3",
       "phase": 2,
-      "note": "Phase 1 = Next.js 웹앱(독립). Phase 2에서 SKILL.md export → 플러그인 마켓 등록 예정.",
+      "note": "초보용 한국어 글쓰기 스킬 10종(SKILL.md, 무코드). v0.1.0 구현 완료 (2026-06 웹앱 계획은 폐기됨).",
       "repo": "https://github.com/sodam-ai/SoDam-Prompt-Eng"
     },
     {

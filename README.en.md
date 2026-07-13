@@ -76,7 +76,7 @@ SoDam Family solves all five of these problems with six specialized tools that w
 | 🔁 SoDamLoop | ✅ Live & Working | 17 self-tests PASS |
 | 🧭 SoDamAgentic | ✅ Live & Working | 22 self-tests PASS |
 | 📄 SoDamContext | 🔜 Coming Soon | Design complete, code in development |
-| ✍️ SoDamPrompt | 🔜 Coming Soon | 10 skill files complete, web app in development |
+| ✍️ SoDamPrompt | ✅ v0.1.0 | 10 Korean writing skills (no-code SKILL.md); 2026-06 web-app plan dropped |
 | 🔍 SoDamReverse | 🔜 Coming Soon | Design complete, code in development |
 
 ---
@@ -591,7 +591,7 @@ SoDamContext is a diagnostic and treatment tool for exactly these problems.
 
 ### ✍️ SoDamPrompt — Prompt Tool (Coming Soon 🔜)
 
-> 10 skill files are complete. A web-based app (built with Next.js) is in development.
+> 10 skill files (no-code SKILL.md) are complete at v0.1.0. (The earlier Next.js web-app plan was dropped.)
 
 Writing good AI instructions (called "prompts") is a skill that takes time to learn. SoDamPrompt skips the learning curve by giving you 10 templates where you just fill in the blanks.
 

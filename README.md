@@ -212,16 +212,16 @@ xcopy /E /I "SoDam-Prompt-Eng\skills" "%USERPROFILE%\.claude\skills\"
 
 | 명령어 | 설명 |
 |--------|------|
-| `/독후감-도우미` | 독후감 작성 도움 |
-| `/정중한-메시지` | 정중한 메시지 작성 |
-| `/긴글-3줄요약` | 긴 글을 3줄로 요약 |
-| `/쉽게-설명해줘` | 어려운 내용 쉽게 설명 |
-| `/공부-계획표` | 공부 계획표 만들기 |
-| `/자기소개-다듬기` | 자기소개 다듬기 |
-| `/sns-캡션` | SNS 캡션 작성 |
-| `/영어-자연스럽게` | 영어 문장 자연스럽게 |
-| `/발표-대본` | 발표 대본 작성 |
-| `/부탁-사과-메시지` | 부탁·사과 메시지 작성 |
+| `/book-report-helper` | 독후감 작성 도움 |
+| `/polite-message` | 정중한 메시지 작성 |
+| `/long-text-summary` | 긴 글을 3줄로 요약 |
+| `/explain-simply` | 어려운 내용 쉽게 설명 |
+| `/study-planner` | 공부 계획표 만들기 |
+| `/self-intro-polish` | 자기소개 다듬기 |
+| `/sns-caption` | SNS 캡션 작성 |
+| `/natural-english` | 영어 문장 자연스럽게 |
+| `/presentation-script` | 발표 대본 작성 |
+| `/request-apology-message` | 부탁·사과 메시지 작성 |
 
 ---
 
@@ -279,7 +279,7 @@ xcopy /E /I "SoDam-Prompt-Eng\skills" "%USERPROFILE%\.claude\skills\"
 | 명령어가 안 보여요 | Claude Code 재시작 (완전히 닫고 다시 열기) |
 | `node --version` 오류 | Node.js 재설치 (nodejs.org LTS 버전) |
 | 차단 메시지가 너무 자주 떠요 | [GUIDE.ko.md](GUIDE.ko.md) §6 FAQ 참고 |
-| 백업 파일이 어디 있어요? | `~/.sodam/backups/` 폴더 확인 |
+| 백업 파일이 어디 있어요? | `~/.sodamharness/backups/` 폴더 확인 (현재 형제별 독립 저장, 통합 경로는 준비 중) |
 | 되돌리기가 안 돼요 | `/sodam-harness-undo` 입력 |
 
 ---
