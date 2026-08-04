@@ -9,6 +9,7 @@ node_modules/
 .PRD/
 CHECKPOINT.md
 tasks/
+SODAM_FAMILY_STATUS.md
 
 # 로컬 도구 자동 생성 파일
 .plugin-config/
