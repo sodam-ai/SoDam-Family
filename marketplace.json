@@ -1,7 +1,7 @@
 {
   "name": "sodam-family-bundle",
   "displayName": "SoDam 가족 번들",
-  "description": "SoDam 6형제 Claude Code 플러그인 패밀리 번들 — 안전(Harness)·건강검진(Context)·반복(Loop)·계획(Agentic) 한 번에 설치",
+  "description": "SoDam 7형제 Claude Code 플러그인 패밀리 번들 — 안전(Harness)·건강검진(Context)·반복(Loop)·계획(Agentic)·위치판정(Graph) 한 번에 설치",
   "version": "0.1.0",
   "familyMapRef": "SODAM_FAMILY_MAP.md",
   "installNote": "Harness 먼저 설치 필수(required=true). 나머지는 선택, 순서 무관.",
@@ -59,11 +59,19 @@
       "phase": 1,
       "note": "역공학 분석 Claude Code 플러그인. Harness safety-rules.json 주입 방식(re-inject-harness.mjs).",
       "repo": "https://github.com/sodam-ai/SoDam-Reverse-Eng"
+    },
+    {
+      "name": "sodam-graph",
+      "displayName": "SoDamGraph",
+      "layer": "독립(계층 밖)",
+      "phase": 1,
+      "note": "7형제 위치·진행단계를 읽기 전용으로 판정해 지도로 보여줌. 어떤 형제에도 의존하지 않는 독립 트랙 — 설치 순서 무관. 2026-08-04 신설, M0·M2 구현 완료.",
+      "repo": "https://github.com/sodam-ai/SoDam-Graph-Eng"
     }
   ],
   "sharedLib": {
     "family-detect": "shared/family-detect.mjs",
-    "description": "6형제 생존 감지 공통 라이브러리 (isFamilyAlive, isHarnessAlive)"
+    "description": "7형제 생존 감지 공통 라이브러리 (isFamilyAlive, isHarnessAlive). Graph의 graph-state.json 규약(F1~F8)은 별도 — SODAM_FAMILY_MAP.md §2 참고"
   },
   "semver": {
     "major": "모든 형제 호환성 검증 필수, 이 파일 동시 업데이트",

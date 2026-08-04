@@ -12,7 +12,7 @@
 ## Table of Contents
 
 1. [Introduction — What is SoDam Family?](#1-introduction--what-is-sodam-family-)
-2. [Six Siblings at a Glance](#2-six-siblings-at-a-glance-)
+2. [Seven Siblings at a Glance](#2-seven-siblings-at-a-glance-)
 3. [Prerequisites & Required Programs](#3-prerequisites--required-programs-)
 4. [How to Download](#4-how-to-download-)
 5. [Installation Guide](#5-installation-guide-)
@@ -32,7 +32,7 @@
 
 ## 1. Introduction — What is SoDam Family? 🤔
 
-**SoDam Family** is a bundle of **six plugins** that make **Claude Code** safer and easier to use — especially for people who have never touched AI tools, computers, or coding before.
+**SoDam Family** is a bundle of **seven plugins** that make **Claude Code** safer and easier to use — especially for people who have never touched AI tools, computers, or coding before.
 
 > **Plain English explanations (read these first!)**
 >
@@ -51,11 +51,11 @@ When you use an AI tool like Claude Code, a few risks can come up:
 4. **AI sometimes acts before thinking** — It should plan what it will do, show you the plan, get your approval, and then act. Without help, it often just dives straight in.
 5. **Writing good AI instructions is hard** — Most people don't know how to write effective prompts (instructions for AI).
 
-SoDam Family solves all five of these problems with six specialized tools that work together.
+SoDam Family solves all five of these problems with seven specialized tools that work together.
 
 ---
 
-## 2. Six Siblings at a Glance 👨‍👩‍👧‍👦
+## 2. Seven Siblings at a Glance 👨‍👩‍👧‍👦
 
 | Name | Nickname | What It Does | Required? |
 |------|----------|--------------|-----------|
@@ -65,19 +65,21 @@ SoDam Family solves all five of these problems with six specialized tools that w
 | 🧭 **SoDamAgentic** | Plan Helper | Teaches Claude Code to plan before acting, and explains what it changed in plain everyday language | Optional |
 | ✍️ **SoDamPrompt** | Prompt Tool | Gives you 10 ready-made AI instruction templates — just fill in the blanks and you're done | Optional |
 | 🔍 **SoDamReverse** | RE Defense | Prevents Claude Code from helping anyone reverse-engineer (take apart and copy) other apps or software | Optional |
+| 🗺️ **SoDamGraph** | Family Map | Reads the other six siblings (read-only) and shows you where each one currently stands | Optional |
 
-> ⚠️ **Always install SoDamHarness before the other siblings.** The other five depend on Harness's safety layer to work properly.
+> ⚠️ **Always install SoDamHarness before the other siblings.** The other six depend on Harness's safety layer to work properly — except SoDamGraph, which is a read-only observer and doesn't depend on any sibling.
 
 ### Current Status
 
 | Plugin | Status | Verified |
 |--------|--------|---------|
 | 🛡️ SoDamHarness | ✅ Live & Working | 72 self-tests PASS |
-| 🔁 SoDamLoop | ✅ Live & Working | 17 self-tests PASS |
-| 🧭 SoDamAgentic | ✅ Live & Working | 22 self-tests PASS |
+| 🔁 SoDamLoop | ✅ Live & Working | 80 self-tests PASS (65 unit + 15 integration) |
+| 🧭 SoDamAgentic | ✅ Live & Working | 44 self-tests PASS |
 | 📄 SoDamContext | 🔜 Coming Soon | Design complete, code in development |
 | ✍️ SoDamPrompt | ✅ v0.1.0 | 10 Korean writing skills (no-code SKILL.md); 2026-06 web-app plan dropped |
 | 🔍 SoDamReverse | 🔜 Coming Soon | Design complete, code in development |
+| 🗺️ SoDamGraph | ✅ Phase 1 in progress | M0 + M2 milestones complete (added 2026-08-04) |
 
 ---
 
@@ -558,7 +560,7 @@ After Claude finishes working, this command produces a plain-English summary of 
 
 Shows whether a planning session is active and where you are in the workflow.
 
-> ⚠️ **Known limitation in Phase 1**: Sometimes Claude Code skips the planning step even when Agentic is installed. This happens occasionally and is a known issue being fixed in Phase 2. If it happens, just type `/sodam-agentic-plan` manually to force the planning step.
+> ⚠️ **Known limitation in Phase 1**: The planning step has been confirmed to fire reliably in real use. What's still unconfirmed is the **review step** (the summary Claude shows after making changes) — sometimes it finishes and reports back in plain conversational language instead of the structured review format. It isn't yet clear whether the review skill didn't trigger at all, or triggered but got summarized loosely; this can only be settled by more real-world use. If you want an explicit structured review, just type `/sodam-agentic-review` manually.
 
 **Built-in safety:** Agentic blocks commands that are clearly dangerous — for example, it will not allow Claude to delete your entire project folder, even if you ask it to.
 
@@ -994,7 +996,6 @@ You do not need to create these. They appear on their own:
 |------|-----------------|
 | `README.md` | Korean version of this document |
 | `README.en.md` | This file — English version |
-| `GUIDE.ko.md` | Detailed Korean guide with deeper explanations |
 | `marketplace.json` | Plugin marketplace configuration |
 | `LICENSE` | Full Apache License 2.0 text |
 
@@ -1013,7 +1014,7 @@ Something not working? Work through this list from top to bottom.
 | Undo is not working | Type `/sodam-harness-undo`. If it still fails, navigate to `~/.sodamharness/backups/` and manually copy the file you want back. |
 | Loop stopped in the middle unexpectedly | Type `/sodam-loop-status` to see what happened, then `/sodam-loop-repair` for guided help. |
 | Loop made changes I didn't want | Type `/sodam-loop-undo` to reverse all loop changes from that session. |
-| Agentic is not creating a plan before acting | This is a known Phase 1 limitation. Type `/sodam-agentic-plan` manually to force the planning step. |
+| Agentic's review summary is not showing after changes | This is a known Phase 1 limitation (the planning step itself works fine). Type `/sodam-agentic-review` manually to force the review step. |
 | A plugin's commands are not showing after installation | Confirm: (1) Did you restart Claude Code fully? (2) Is the folder in the right location? Check `~/.claude/plugins/` to verify. |
 | Something changed without asking me first | Type `/sodam-harness-log` to see what happened, then `/sodam-harness-undo` to restore the backup. |
 | I copied the plugin to the wrong folder | Go to `~/.claude/plugins/`, delete the incorrectly-placed folder, and copy it again to the correct location. Then restart Claude Code. |
@@ -1286,7 +1287,6 @@ If you are using SoDam Family in a commercial product, service, or deployment, c
 ## Get Help 💬
 
 - **Korean README**: [README.md](README.md)
-- **Detailed Korean Guide**: [GUIDE.ko.md](GUIDE.ko.md)
 - **Bug Reports**: Open an issue on the relevant plugin's GitHub repository
 - **First thing to try when stuck**: Type `/sodam-harness-fix` in Claude Code
 
