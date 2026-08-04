@@ -58,18 +58,6 @@ SoDam Family solves all five of these problems with seven specialized tools that
 
 > ⚠️ **Always install SoDamHarness before the other siblings.** The other six depend on Harness's safety layer to work properly — except SoDamGraph, which is a read-only observer and doesn't depend on any sibling.
 
-### Current Status
-
-| Plugin | Status | Verified |
-|--------|--------|---------|
-| 🛡️ SoDamHarness | ✅ Live & Working | 72 self-tests PASS |
-| 🔁 SoDamLoop | ✅ Live & Working | 80 self-tests PASS (65 unit + 15 integration) |
-| 🧭 SoDamAgentic | ✅ Live & Working | 44 self-tests PASS |
-| 📄 SoDamContext | 🔜 Coming Soon | Design complete, code in development |
-| ✍️ SoDamPrompt | ✅ v0.1.0 | 10 Korean writing skills (no-code SKILL.md); 2026-06 web-app plan dropped |
-| 🔍 SoDamReverse | 🔜 Coming Soon | Design complete, code in development |
-| 🗺️ SoDamGraph | ✅ Phase 1 in progress | M0 + M2 milestones complete (added 2026-08-04) |
-
 ---
 
 ## 3. Architecture — How Everything Connects 🏗️
@@ -146,65 +134,67 @@ This design means: even if Loop or Agentic fail for any reason, Harness is still
 
 ## 4. FAQ — Frequently Asked Questions ❓
 
----
+*(Click a question to expand the answer)*
 
-**1. Is SoDam Family free?**
+<details>
+<summary><b>1. Is SoDam Family free?</b></summary><br>
 
-Yes, completely free. All seven plugins are open source (meaning anyone can read and use the code) under the Apache 2.0 license. Personal use and commercial use are both allowed at no cost, subject to the license conditions described in Section 16.
+Yes, completely free. All seven plugins are open source (meaning anyone can read and use the code) under the Apache 2.0 license. Personal use and commercial use are both allowed at no cost, subject to the license conditions described in Section 5.
+</details>
 
----
-
-**2. Are my files sent to any server or company?**
+<details>
+<summary><b>2. Are my files sent to any server or company?</b></summary><br>
 
 No. SoDam Family runs entirely on your own computer. Your files, documents, and code never leave your machine. The only exception is the conversations you have with Claude AI — those go through Anthropic's servers because that is how Claude works. SoDam Family does not change this behavior. See Anthropic's privacy policy at [anthropic.com/policies](https://www.anthropic.com/policies).
+</details>
 
----
-
-**3. Does SoDam Family work on Mac and Linux too?**
+<details>
+<summary><b>3. Does SoDam Family work on Mac and Linux too?</b></summary><br>
 
 Yes. It works on Windows, Mac, and Linux. Once installed, plugin behavior is identical on all platforms.
+</details>
 
----
-
-**4. What exactly is Claude Code? I've never heard of it.**
+<details>
+<summary><b>4. What exactly is Claude Code? I've never heard of it.</b></summary><br>
 
 Claude Code is the official command-line tool (CLI — a text-based program you run in a terminal) made by Anthropic to let you use Claude AI on your computer. It is especially powerful for programming and coding tasks, but you can use it for writing, research, translation, analysis, and more. Learn more at [claude.ai/code](https://claude.ai/code).
+</details>
 
----
-
-**5. Can AI change my files without asking me?**
+<details>
+<summary><b>5. Can AI change my files without asking me?</b></summary><br>
 
 Without SoDamHarness: Yes. When you ask Claude Code to edit files, it can read and write files on your computer.
 
 With SoDamHarness installed: Harness intercepts risky write operations and asks "Are you sure?" before proceeding. It also creates a backup of the original file first. The most dangerous commands (like deleting an entire folder) are blocked completely, even if you type them yourself by accident.
+</details>
 
----
-
-**6. Do I need an internet connection to use SoDam Family?**
+<details>
+<summary><b>6. Do I need an internet connection to use SoDam Family?</b></summary><br>
 
 Internet is needed for two things only:
 1. Downloading and installing the plugins (one-time setup)
 2. Talking to Claude AI (every conversation travels through Anthropic's servers)
 
 After setup, the SoDam plugins themselves run locally with no internet required. Their safety checks happen entirely on your machine.
+</details>
 
----
-
-**7. Can I use SoDam Family on my phone or tablet?**
+<details>
+<summary><b>7. Can I use SoDam Family on my phone or tablet?</b></summary><br>
 
 No. SoDam Family requires Claude Code, which currently runs on desktop computers (Windows, Mac, Linux). There is no official phone or tablet version of Claude Code at the time of writing.
+</details>
 
----
-
-**8. I don't know English well. Can I still use this?**
+<details>
+<summary><b>8. I don't know English well. Can I still use this?</b></summary><br>
 
 Claude Code itself can respond in almost any language. Just ask it: "Please always reply in [your language]." The original SoDam Family was designed for Korean speakers, and a full Korean README (`README.md`) is included in this repository.
+</details>
 
----
-
-**9. Can I use SoDam Family with ChatGPT, Gemini, Copilot, or other AI tools?**
+<details>
+<summary><b>9. Can I use SoDam Family with ChatGPT, Gemini, Copilot, or other AI tools?</b></summary><br>
 
 No. SoDam Family is specifically built for Claude Code and uses Claude Code's plugin system (hooks, skills, slash commands). It is incompatible with ChatGPT, Gemini, GitHub Copilot, Ollama, or any other AI tool. Each AI platform has its own separate plugin ecosystem.
+</details>
 
 ---
 

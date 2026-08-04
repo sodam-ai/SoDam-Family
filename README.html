@@ -226,7 +226,6 @@ Code</strong>를 더 안전하고, 더 편리하고, 더 똑똑하게 쓸 수 �
 <th>이름</th>
 <th>별명</th>
 <th>역할</th>
-<th>상태</th>
 </tr>
 </thead>
 <tbody>
@@ -234,43 +233,36 @@ Code</strong>를 더 안전하고, 더 편리하고, 더 똑똑하게 쓸 수 �
 <td>🛡️ <strong>SoDamHarness</strong></td>
 <td>소담하네스</td>
 <td>AI 위험 행동 차단 · 안전 게이트</td>
-<td>✅ 완료</td>
 </tr>
 <tr>
 <td>📄 <strong>SoDamContext</strong></td>
 <td>소담컨텍스트</td>
 <td>AI 사용설명서 건강검진 · 다듬기</td>
-<td>🔜 예정</td>
 </tr>
 <tr>
 <td>🔁 <strong>SoDamLoop</strong></td>
 <td>소담루프</td>
 <td>반복 작업 자동화</td>
-<td>✅ 완료</td>
 </tr>
 <tr>
 <td>🧭 <strong>SoDamAgentic</strong></td>
 <td>소담에이전틱</td>
 <td>계획 짜고 실행하고 검토하기</td>
-<td>✅ 완료</td>
 </tr>
 <tr>
 <td>✍️ <strong>SoDamPrompt</strong></td>
 <td>소담프롬프트</td>
 <td>초보자용 한국어 글쓰기 스킬 10종(빈칸 채우기)</td>
-<td>✅ 완료</td>
 </tr>
 <tr>
 <td>🔍 <strong>SoDamReverse</strong></td>
 <td>소담리버스</td>
 <td>역공학(해킹) 시도 차단</td>
-<td>🔜 예정</td>
 </tr>
 <tr>
 <td>🗺️ <strong>SoDamGraph</strong></td>
 <td>소담그래프</td>
 <td>7형제 지금 어디까지 됐는지 지도로 보여주기</td>
-<td>✅ 진행 중(Phase 1)</td>
 </tr>
 </tbody>
 </table>
@@ -290,8 +282,6 @@ Code</strong>를 더 안전하고, 더 편리하고, 더 똑똑하게 쓸 수 �
 <li>AI가 파일을 덮어쓰려 할 때 → 백업 먼저 만들고 확인 요청</li>
 <li>정말 위험한 명령(시스템 파괴 등) → 즉시 차단</li>
 </ul>
-<p><strong>현재 상태:</strong> ✅ 자가테스트 117개 모두 통과 (Phase 1+2
-코드 완료)</p>
 <hr />
 <h3
 id="page_facing_up-sodamcontext-소담컨텍스트--ai-사용설명서-건강검진">📄
@@ -305,10 +295,6 @@ SoDamContext (소담컨텍스트) — AI 사용설명서 건강검진</h3>
 <p>💡 <code>CLAUDE.md</code>란? AI에게 "나는 이렇게 일하고 싶어"라고
 알려주는 나만의 설명서입니다.</p>
 </blockquote>
-<p><strong>현재 상태:</strong> 🔜 비공개(구현 완료, 공개 배포 준비 중) —
-문진·검진·처방·동기화 4개 기능 전부 구현·테스트 완료(118+59=177 PASS),
-클로드코드·코덱스 둘 다 라이브 검증됨. 예방(저장 전 자동 차단)은 부품
-단위로는 정확성이 확인됐으나 실제 저장 화면 발동은 아직 검증 중.</p>
 <hr />
 <h3 id="repeat-sodamloop-소담루프--반복-자동화">🔁 SoDamLoop (소담루프)
 — 반복 자동화</h3>
@@ -322,14 +308,11 @@ SoDamContext (소담컨텍스트) — AI 사용설명서 건강검진</h3>
 <li>30분 초과 시 자동 중단</li>
 <li>같은 작업이 무한 반복되면 자동 감지 후 중단</li>
 </ul>
-<p><strong>현재 상태:</strong> ✅ 자가테스트 80개 모두 통과(자가진단 65
-+ 통합 15)</p>
 <hr />
 <h3 id="compass-sodamagentic-소담에이전틱--계획--검토">🧭 SoDamAgentic
 (소담에이전틱) — 계획 · 검토</h3>
 <p>AI에게 "먼저 계획 짜고, 실행하고, 나중에 검토하자"는 <strong>체계적인
 작업 방식</strong>을 안내하는 플러그인입니다.</p>
-<p><strong>현재 상태:</strong> ✅ 자가테스트 22개 모두 통과</p>
 <hr />
 <h3 id="writing_hand-sodamprompt-소담프롬프트--프롬프트-설계-도구">✍️
 SoDamPrompt (소담프롬프트) — 프롬프트 설계 도구</h3>
@@ -341,8 +324,6 @@ SoDamPrompt (소담프롬프트) — 프롬프트 설계 도구</h3>
 <p>💡 <strong>프롬프트</strong>란? AI에게 보내는 지시문이나 질문을
 말해요.</p>
 </blockquote>
-<p><strong>현재 상태:</strong> ✅ v0.1.0 구현 완료 (한국어 글쓰기 스킬
-10종, 무코드 SKILL.md · 2026-06 웹앱 계획은 폐기됨)</p>
 <hr />
 <h3 id="mag-sodamreverse-소담리버스--역공학-방어">🔍 SoDamReverse
 (소담리버스) — 역공학 방어</h3>
@@ -358,8 +339,6 @@ SoDamPrompt (소담프롬프트) — 프롬프트 설계 도구</h3>
 <p>💡 <strong>SHA-256</strong>이란? 파일이 변조되었는지 확인하는 암호
 기술이에요. 지문 같은 것입니다.</p>
 </blockquote>
-<p><strong>현재 상태:</strong> 🔜 출시 예정 (v0.1.0 구현 완료 · 공개
-배포 준비 중)</p>
 <hr />
 <h3 id="world_map-sodamgraph-소담그래프--7형제-위치진행-지도">🗺️
 SoDamGraph (소담그래프) — 7형제 위치·진행 지도</h3>
@@ -379,8 +358,6 @@ SoDamGraph (소담그래프) — 7형제 위치·진행 지도</h3>
 <p>💡 다른 형제와 달리 위험 행동을 막거나 확인창을 띄우지 않아요.
 순수하게 "지도"만 그려줍니다.</p>
 </blockquote>
-<p><strong>현재 상태:</strong> ✅ 진행 중 (Phase 1의 첫 두 단계 완료,
-나머지 이어서 개발 중)</p>
 <hr />
 <h2 id="3-아키텍처">3. 아키텍처</h2>
 <p>이 섹션에서 배울 것: SoDam 7형제가 어떻게 연결되어 있는지</p>
@@ -436,62 +413,94 @@ SoDamGraph (소담그래프) — 7형제 위치·진행 지도</h3>
 → 서로의 폴더에 절대 침범하지 않습니다.</code></pre>
 <hr />
 <h2 id="4-faq">4. FAQ</h2>
-<p>이 섹션에서 배울 것: 자주 묻는 질문과 답변</p>
-<hr />
-<p><strong>Q1. 무료인가요?</strong></p>
+<p>이 섹션에서 배울 것: 자주 묻는 질문과 답변 (질문을 클릭하면 답이
+펼쳐집니다)</p>
+<details>
+<summary><b>Q1. 무료인가요?</b></summary><br>
+
 <p>A: 네! SoDam Family 플러그인 자체는 <strong>완전 무료
 오픈소스</strong>입니다. 단, Claude Code 사용 비용(Anthropic 요금)은
 별도로 발생할 수 있습니다.</p>
-<hr />
-<p><strong>Q2. 설치하면 내 파일이 외부로 전송되나요?</strong></p>
+</details>
+
+<details>
+<summary><b>Q2. 설치하면 내 파일이 외부로 전송되나요?</b></summary><br>
+
 <p>A: <strong>SoDam 플러그인이 저장하는 데이터는 내 컴퓨터에만
 저장됩니다.</strong> 단, AI가 답변을 생성할 때 Claude(Anthropic) 서버와
 통신하는 것은 Claude Code 자체의 동작입니다. SoDam이 별도로 외부로
 데이터를 보내지는 않습니다.</p>
-<hr />
-<p><strong>Q3. Windows에서만 되나요?</strong></p>
+</details>
+
+<details>
+<summary><b>Q3. Windows에서만 되나요?</b></summary><br>
+
 <p>A: 아니요! <strong>Windows, Mac, Linux</strong> 모두 지원합니다. 단
 스마트폰(iOS/Android)은 지원하지 않습니다.</p>
-<hr />
-<p><strong>Q4. Claude Code가 뭔가요?</strong></p>
+</details>
+
+<details>
+<summary><b>Q4. Claude Code가 뭔가요?</b></summary><br>
+
 <p>A: Anthropic(앤트로픽)이라는 AI 회사가 만든 <strong>AI 코딩
 도구</strong>입니다. AI에게 글자로 명령을 내리면 코드를 만들거나, 파일을
 편집하거나, 다양한 작업을 도와줍니다. SoDam Family는 이 Claude Code
 위에서 동작하는 추가 도구들입니다.</p>
-<hr />
-<p><strong>Q5. AI가 내 파일을 마음대로 바꿀 수도 있나요?</strong></p>
+</details>
+
+<details>
+<summary><b>Q5. AI가 내 파일을 마음대로 바꿀 수도 있나요?</b></summary><br>
+
 <p>A: Claude Code는 허락한 범위 안에서 파일을 변경할 수 있습니다.
 <strong>SoDamHarness는 이런 변경이 일어나기 전에 알려주고, 백업을 먼저
 만들어 줍니다.</strong> 실수로 바뀌어도 되돌릴 수 있습니다.</p>
-<hr />
-<p><strong>Q6. 인터넷이 없어도 되나요?</strong></p>
+</details>
+
+<details>
+<summary><b>Q6. 인터넷이 없어도 되나요?</b></summary><br>
+
 <p>A: 초기 설치 시에는 인터넷이 필요합니다. 설치 후 SoDam 플러그인
 자체는 오프라인으로 동작하지만, <strong>AI(Claude) 기능은 인터넷 연결이
 필요합니다.</strong></p>
-<hr />
-<p><strong>Q7. 핸드폰에서도 되나요?</strong></p>
+</details>
+
+<details>
+<summary><b>Q7. 핸드폰에서도 되나요?</b></summary><br>
+
 <p>A: 현재는 <strong>지원하지 않습니다.</strong> Claude Code가
 컴퓨터(데스크톱/노트북) 전용 프로그램이기 때문입니다.</p>
-<hr />
-<p><strong>Q8. 영어를 몰라도 되나요?</strong></p>
+</details>
+
+<details>
+<summary><b>Q8. 영어를 몰라도 되나요?</b></summary><br>
+
 <p>A: <strong>네, 괜찮습니다!</strong> 오류 메시지가 영어로 나와도
 AI에게 "이거 한국어로 설명해줘"라고 하면 됩니다.</p>
-<hr />
-<p><strong>Q9. 비밀번호나 API 키도 백업되나요?</strong></p>
+</details>
+
+<details>
+<summary><b>Q9. 비밀번호나 API 키도 백업되나요?</b></summary><br>
+
 <p>A: <strong>절대 아닙니다.</strong> SoDamHarness는 비밀번호, API 키,
 토큰이 포함된 파일을 감지하면 백업하지 않고 의심 표시만 합니다. 이는
 의도된 보안 설계입니다.</p>
-<hr />
-<p><strong>Q10. 출시 예정인 플러그인(Context, Reverse)은 언제
-나오나요?</strong></p>
+</details>
+
+<details>
+<summary><b>Q10. 출시 예정인 플러그인(Context, Reverse)은 언제 나오나요?</b></summary><br>
+
 <p>A: 정확한 출시 일정은 현재 미정입니다. GitHub 저장소를 팔로우하거나
 SoDam 공식 채널을 구독하면 소식을 받을 수 있습니다.</p>
-<hr />
-<p><strong>Q11. SoDam Family를 회사(상업적 목적)에서 써도
-되나요?</strong></p>
+</details>
+
+<details>
+<summary><b>Q11. SoDam Family를 회사(상업적 목적)에서 써도 되나요?</b></summary><br>
+
 <p>A: <strong>네!</strong> Apache License 2.0에 따라 상업적 사용이
 허용됩니다. 단, 원본 저작권 고지를 반드시 포함해야 합니다. 아래 라이선스
 섹션을 꼭 읽어보세요.</p>
+</details>
+
 <hr />
 <h2 id="5-법률--저작권--라이선스--상업적-용도">5. 법률 / 저작권 /
 라이선스 / 상업적 용도</h2>
