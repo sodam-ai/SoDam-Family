@@ -122,13 +122,13 @@ This design means: even if Loop or Agentic fail for any reason, Harness is still
 
 | Plugin | Repository | Visibility |
 |--------|-----------|------------|
-| 🛡️ SoDamHarness | sodam-ai/SoDam-Harness-Eng | Private |
-| 🔁 SoDamLoop | sodam-ai/SoDam-Loop-Eng | Private |
-| 🧭 SoDamAgentic | sodam-ai/SoDam-Agentic-Eng | Private |
-| 📄 SoDamContext | sodam-ai/SoDam-Context-Eng | Private |
-| ✍️ SoDamPrompt | sodam-ai/SoDam-Prompt-Eng | **Public** |
-| 🔍 SoDamReverse | sodam-ai/SoDam-Reverse-Eng | Private |
-| 🗺️ SoDamGraph | sodam-ai/SoDam-Graph-Eng | Private |
+| 🛡️ SoDamHarness | [sodam-ai/SoDam-Harness-Eng](https://github.com/sodam-ai/SoDam-Harness-Eng) | **Public** |
+| 🔁 SoDamLoop | [sodam-ai/SoDam-Loop-Eng](https://github.com/sodam-ai/SoDam-Loop-Eng) | **Public** |
+| 🧭 SoDamAgentic | [sodam-ai/SoDam-Agentic-Eng](https://github.com/sodam-ai/SoDam-Agentic-Eng) | **Public** |
+| 📄 SoDamContext | [sodam-ai/SoDam-Context-Eng](https://github.com/sodam-ai/SoDam-Context-Eng) | **Public** |
+| ✍️ SoDamPrompt | [sodam-ai/SoDam-Prompt-Eng](https://github.com/sodam-ai/SoDam-Prompt-Eng) | **Public** |
+| 🔍 SoDamReverse | [sodam-ai/SoDam-Reverse-Eng](https://github.com/sodam-ai/SoDam-Reverse-Eng) | **Public** |
+| 🗺️ SoDamGraph | [sodam-ai/SoDam-Graph-Eng](https://github.com/sodam-ai/SoDam-Graph-Eng) | **Public** |
 
 ---
 
