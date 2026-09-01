@@ -45,13 +45,13 @@ SoDam Family는 이런 위험을 막아주고, AI를 더 잘 활용할 수 있�
 
 | 이름 | 별명 | 역할 |
 |------|------|------|
-| 🛡️ **SoDamHarness** | 소담하네스 | AI 위험 행동 차단 · 안전 게이트 |
-| 📄 **SoDamContext** | 소담컨텍스트 | AI 사용설명서 건강검진 · 다듬기 |
-| 🔁 **SoDamLoop** | 소담루프 | 반복 작업 자동화 |
-| 🧭 **SoDamAgentic** | 소담에이전틱 | 계획 짜고 실행하고 검토하기 |
-| ✍️ **SoDamPrompt** | 소담프롬프트 | 초보자용 한국어 글쓰기 스킬 10종(빈칸 채우기) |
-| 🔍 **SoDamReverse** | 소담리버스 | 역공학(해킹) 시도 차단 |
-| 🗺️ **SoDamGraph** | 소담그래프 | 7형제 지금 어디까지 됐는지 지도로 보여주기 |
+| 🛡️ **[SoDamHarness](https://github.com/sodam-ai/SoDam-Harness-Eng)** | 소담하네스 | AI 위험 행동 차단 · 안전 게이트 |
+| 📄 **[SoDamContext](https://github.com/sodam-ai/SoDam-Context-Eng)** | 소담컨텍스트 | AI 사용설명서 건강검진 · 다듬기 |
+| 🔁 **[SoDamLoop](https://github.com/sodam-ai/SoDam-Loop-Eng)** | 소담루프 | 반복 작업 자동화 |
+| 🧭 **[SoDamAgentic](https://github.com/sodam-ai/SoDam-Agentic-Eng)** | 소담에이전틱 | 계획 짜고 실행하고 검토하기 |
+| ✍️ **[SoDamPrompt](https://github.com/sodam-ai/SoDam-Prompt-Eng)** | 소담프롬프트 | 초보자용 한국어 글쓰기 스킬 10종(빈칸 채우기) |
+| 🔍 **[SoDamReverse](https://github.com/sodam-ai/SoDam-Reverse-Eng)** | 소담리버스 | 역공학(해킹) 시도 차단 |
+| 🗺️ **[SoDamGraph](https://github.com/sodam-ai/SoDam-Graph-Eng)** | 소담그래프 | 7형제 지금 어디까지 됐는지 지도로 보여주기 |
 
 > 💡 **역공학(리버스 엔지니어링)**이란? 다른 사람의 제품이나 코드를 분해해서 동작 원리를 알아내는 행위입니다. 이를 AI가 돕지 못하도록 막아줍니다.
 

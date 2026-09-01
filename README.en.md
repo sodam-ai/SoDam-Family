@@ -48,13 +48,13 @@ SoDam Family solves all five of these problems with seven specialized tools that
 
 | Name | Nickname | What It Does | Required? |
 |------|----------|--------------|-----------|
-| 🛡️ **SoDamHarness** | Safety Gate | Blocks dangerous commands, creates backups before risky operations, and lets you undo mistakes | **REQUIRED — Install this first** |
-| 📄 **SoDamContext** | AI Manual Doctor | Diagnoses and fixes your AI instruction file (`CLAUDE.md`) when it gets bloated or broken | Optional |
-| 🔁 **SoDamLoop** | Auto-Repeater | Automatically repeats the same AI task multiple times so you don't have to type it over and over | Optional |
-| 🧭 **SoDamAgentic** | Plan Helper | Teaches Claude Code to plan before acting, and explains what it changed in plain everyday language | Optional |
-| ✍️ **SoDamPrompt** | Prompt Tool | Gives you 10 ready-made AI instruction templates — just fill in the blanks and you're done | Optional |
-| 🔍 **SoDamReverse** | RE Defense | Prevents Claude Code from helping anyone reverse-engineer (take apart and copy) other apps or software | Optional |
-| 🗺️ **SoDamGraph** | Family Map | Reads the other six siblings (read-only) and shows you where each one currently stands | Optional |
+| 🛡️ **[SoDamHarness](https://github.com/sodam-ai/SoDam-Harness-Eng)** | Safety Gate | Blocks dangerous commands, creates backups before risky operations, and lets you undo mistakes | **REQUIRED — Install this first** |
+| 📄 **[SoDamContext](https://github.com/sodam-ai/SoDam-Context-Eng)** | AI Manual Doctor | Diagnoses and fixes your AI instruction file (`CLAUDE.md`) when it gets bloated or broken | Optional |
+| 🔁 **[SoDamLoop](https://github.com/sodam-ai/SoDam-Loop-Eng)** | Auto-Repeater | Automatically repeats the same AI task multiple times so you don't have to type it over and over | Optional |
+| 🧭 **[SoDamAgentic](https://github.com/sodam-ai/SoDam-Agentic-Eng)** | Plan Helper | Teaches Claude Code to plan before acting, and explains what it changed in plain everyday language | Optional |
+| ✍️ **[SoDamPrompt](https://github.com/sodam-ai/SoDam-Prompt-Eng)** | Prompt Tool | Gives you 10 ready-made AI instruction templates — just fill in the blanks and you're done | Optional |
+| 🔍 **[SoDamReverse](https://github.com/sodam-ai/SoDam-Reverse-Eng)** | RE Defense | Prevents Claude Code from helping anyone reverse-engineer (take apart and copy) other apps or software | Optional |
+| 🗺️ **[SoDamGraph](https://github.com/sodam-ai/SoDam-Graph-Eng)** | Family Map | Reads the other six siblings (read-only) and shows you where each one currently stands | Optional |
 
 > ⚠️ **Always install SoDamHarness before the other siblings.** The other six depend on Harness's safety layer to work properly — except SoDamGraph, which is a read-only observer and doesn't depend on any sibling.
 
